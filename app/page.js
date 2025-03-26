@@ -1,9 +1,18 @@
 import React from 'react'
+import { getFeaturedEvents } from './dummy-data'
+import EventList from './components/events/EventList'
 
-const page = () => {
+const AllEventsPage = () => {
+
+  const featuredEvents = getFeaturedEvents()
+
   return (
-    <div>Home Page</div>
+    <>
+      <div>
+        <EventList items={featuredEvents} />
+      </div>
+    </>
   )
 }
 
-export default page
+export default AllEventsPage
