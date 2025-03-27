@@ -2,10 +2,11 @@
 import React from 'react'
 import {useRef} from 'react'
 import Button from '../ui/Button'
+import { useRouter } from 'next/navigation'
 import styles from './EventSearch.module.css'
 
 const EventSearch = ({onEventSearch}) => {
-
+    const router = useRouter()
     const yearInput = useRef();
     const monthInput = useRef();
 
@@ -15,9 +16,10 @@ const EventSearch = ({onEventSearch}) => {
     const year = yearInput.current.value;
     const month = monthInput.current.value;
 
-    console.log('Form submitted with:', year, month); // Log for debugging
-    onEventSearch(year, month); // Call onSearch from parent
+    router.push(`/events/${year}/${month}`)
    }; 
+
+
  
 
   return (

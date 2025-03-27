@@ -1,23 +1,20 @@
-"use client"
 import React from 'react'
-import { useRouter } from 'next/navigation'
-import { getAllEvents } from '../dummy-data'
+import {getAllEvents} from 'app/helper/api-util'
 import EventList from '../components/events/EventList'
 import EventSearch from 'app/components/events/EventSearch'
 
-const AllEventsPage = () => {
+// Add this export to force dynamic rendering
+export const dynamic = 'force-dynamic';
 
-  const router = useRouter()
-  const featuredEvents = getAllEvents()
 
-  const onEventSearch = (year, month) => {
-    router.push(`/events/${year}/${month}`)
-  }
+const AllEventsPage = async () => {
+
+  const featuredEvents = await getAllEvents()
 
   return (
     <>
       <div>
-        <EventSearch onEventSearch={onEventSearch}/>
+        <EventSearch />
         <EventList items={featuredEvents} />
       </div>
     </>

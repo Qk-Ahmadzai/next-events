@@ -1,10 +1,13 @@
 import React from 'react'
-import { getFeaturedEvents } from './dummy-data'
+import { getFeaturedEvents } from './helper/api-util'
 import EventList from './components/events/EventList'
 
-const AllEventsPage = () => {
+// Enable Incremental Static Regeneration (ISR) - revalidate every 60 seconds
+export const revalidate = 60; // ← This will refresh data every minute
 
-  const featuredEvents = getFeaturedEvents()
+
+const FeaturedEventsPage = async () => {
+  const featuredEvents = await getFeaturedEvents();
 
   return (
     <>
@@ -15,4 +18,4 @@ const AllEventsPage = () => {
   )
 }
 
-export default AllEventsPage
+export default FeaturedEventsPage

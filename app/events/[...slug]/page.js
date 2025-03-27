@@ -2,7 +2,7 @@ import EventList from 'app/components/events/EventList';
 import ResultTitle from 'app/components/events/ResultTitle';
 import ErrorAlert from 'app/components/ui/ErrorAlert';
 import Button from 'app/components/ui/Button';
-import { getFilteredEvents } from 'app/dummy-data'
+import { getFilteredEvents } from 'app/helper/api-util';
 import React from 'react'
 
 const FilteredEventPage =  async ({params}) => {
@@ -15,7 +15,7 @@ const FilteredEventPage =  async ({params}) => {
     return <p>Invalid filter. Please adjust your values!</p>
   }
   
-  const events = getFilteredEvents({year, month})
+  const events = await getFilteredEvents({year, month})
 
   if(!events || events.length === 0){
     return (

@@ -3,7 +3,7 @@ import EventLogistics from 'app/components/event-detail/EventLogistics';
 import EventSummary from 'app/components/event-detail/EventSummary';
 import EventItem from 'app/components/events/EventItem';
 import Button from 'app/components/ui/Button';
-import { getEventById } from 'app/dummy-data';
+import { getEventById } from 'app/helper/api-util';
 import ErrorAlert from '../../components/ui/ErrorAlert';
 import React from 'react'
 
@@ -11,7 +11,7 @@ import React from 'react'
 const EventDetailPage = async ({params}) => {
   
   params = await params;
-  const event = getEventById(params.id);
+  const event = await getEventById(params.id);
   if(!event) return (
     <>
       <ErrorAlert>
