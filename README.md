@@ -3,7 +3,7 @@
 ![Project Screenshot](https://raw.githubusercontent.com/Qk-Ahmadzai/next-events/refs/heads/main/Screenshot.PNG)
 
 🚀 **GitHub Repo:** [https://github.com/Qk-Ahmadzai/next-events](https://github.com/Qk-Ahmadzai/next-events)  
-🌐 **Live Demo:** [Add Vercel/Netlify link here]
+🌐 **Live Demo:** [https://next-events-git-main-qkahmadzais-projects.vercel.app/]
 
 A Next.js 14 application that allows users to browse and filter events by year and month, demonstrating dynamic routing, server components, and responsive design.
 
