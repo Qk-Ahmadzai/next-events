@@ -2,7 +2,7 @@ import EventContent from 'app/components/event-detail/EventContent';
 import EventLogistics from 'app/components/event-detail/EventLogistics';
 import EventSummary from 'app/components/event-detail/EventSummary';
 import EventItem from 'app/components/events/EventItem';
-import Button from 'app/components/ui/button';
+import Button from 'app/components/ui/Button';
 import { getEventById } from 'app/dummy-data';
 import ErrorAlert from '../../components/ui/ErrorAlert';
 import React from 'react'
