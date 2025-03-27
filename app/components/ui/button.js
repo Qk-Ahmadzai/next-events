@@ -1,12 +1,12 @@
 import Link from 'next/link'
 import React, { Children } from 'react'
-import styles from './Button.module.css'
+import styless from './Button.module.css'
 
 const Button = ({children, href, onClick}) => {
 
   if(href){
     return (
-      <Link href={href} className={styles.btn}>  
+      <Link href={href} className={styless.btn}>  
          {children} 
       </Link>
       
