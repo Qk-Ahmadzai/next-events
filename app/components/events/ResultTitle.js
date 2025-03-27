@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './ResultTitle.module.css'
-import Button from '../ui/Button';
+import Button from '../ui/ssButton';
 
 const ResultTitle = ({year, month}) => {
     const humanReadableDate = new Date(year, month - 1).toLocaleString('en-US', {
