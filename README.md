@@ -33,6 +33,7 @@ A Next.js 14 application that allows users to browse and filter events by year a
 - **Version Control:** Git & GitHub
 
 ## 📂 Folder Structure
+```
 next-events/
 ├── app/
 │ ├── events/
@@ -47,6 +48,7 @@ next-events/
 ├── public/
 ├── styles/
 └── README.md
+```
 
 
 ## ⚙️ Installation
@@ -57,8 +59,9 @@ next-events/
 
    npm install
    npm run dev
+```
 
-   🚀 Running the App
+🚀 Running the App
 Homepage: /
 
 All Events: /events
@@ -80,6 +83,8 @@ Configure as static site (if using next export) with SSR support.
 Dynamic Route ([...slug])
 
 // app/events/[...slug]/page.js
+```
 const [year, month] = params.slug;
 const filteredEvents = getFilteredEvents({ year: +year, month: +month });
+```
 
