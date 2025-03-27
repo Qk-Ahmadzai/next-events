@@ -58,8 +58,8 @@ next-events/
    cd next-events
 
    npm install
-   npm run dev
-```
+   npm run dev ```
+
 
 🚀 Running the App
 Homepage: /
@@ -83,8 +83,8 @@ Configure as static site (if using next export) with SSR support.
 Dynamic Route ([...slug])
 
 // app/events/[...slug]/page.js
-```
+
 const [year, month] = params.slug;
 const filteredEvents = getFilteredEvents({ year: +year, month: +month });
-```
+
 
