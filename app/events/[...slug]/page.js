@@ -1,7 +1,7 @@
 import EventList from 'app/components/events/EventList';
 import ResultTitle from 'app/components/events/ResultTitle';
 import ErrorAlert from 'app/components/ui/ErrorAlert';
-import Button from 'app/components/ui/ssButton';
+import Button from 'app/components/ui/Button';
 import { getFilteredEvents } from 'app/dummy-data'
 import React from 'react'
 

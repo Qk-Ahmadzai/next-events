@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./EventItem.module.css";
-import Button from '../ui/ssButton';
+import Button from '../ui/Button';
 import DateIcon from '../icons/date-icon';
 import AddressIcon from '../icons/address-icon';
 import ArrowRightIcon from '../icons/arrow-right-icon';

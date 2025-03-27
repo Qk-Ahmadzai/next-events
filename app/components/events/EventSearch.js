@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import {useRef} from 'react'
-import Button from '../ui/ssButton'
+import Button from '../ui/Button'
 import styles from './EventSearch.module.css'
 
 const EventSearch = ({onEventSearch}) => {
